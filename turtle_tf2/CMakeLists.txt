@@ -46,6 +46,10 @@ endif()
 add_executable(turtle_tf2_message_filter src/message_filter.cpp)
 target_link_libraries(turtle_tf2_message_filter ${catkin_LIBRARIES})
 
+add_executable(static_turtle_tf2_broadcaster src/static_turtle_tf2_broadcaster.cpp)
+target_link_libraries(static_turtle_tf2_broadcaster ${catkin_LIBRARIES})
+
+
 ## Install Python Examples
 install(PROGRAMS
   nodes/dynamic_tf2_broadcaster.py
